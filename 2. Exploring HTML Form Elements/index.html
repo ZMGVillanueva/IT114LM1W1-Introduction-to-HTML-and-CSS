@@ -8,10 +8,15 @@
 <body>
     <h1>HTML Form Example</h1>
     <!-- TODO 2.1: Add the container for the form. It should POST to "/submit_form"  -->
+    <form action="/submit_form" method="post">
     
         <!-- TODO 2.2: Add a first name text field -->
+        <label for="name"> First Name:</label>
+        <input type="text" id="name" name="Zhen" />
 
         <!-- TODO 2.3: Add a last name text field. The field must be required. -->
+        <label for="name">Last Name:</label>
+        <input type="text" id="name" name="Villanueva" />
 
         <!-- TODO 2.4: Add an email text field. The field must be read only. -->
 
@@ -26,6 +31,8 @@
         <!-- TODO 2.9: Add a text area that asks the user if they would prefer to be a cactus or a shark -->
 
         <!-- TODO 2.10: Add a submit button -->
+
+    </form>
 
 </body>
 
