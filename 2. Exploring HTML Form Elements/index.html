@@ -14,42 +14,74 @@
 
         <ul>
             <li>
-              <label for="first_name">First Name: </label>
+              <label for="first_name"><strong> First Name: </strong></label>
               <input type="text" id="first_name" name="first_name">
             </li>
 
         <!-- TODO 2.3: Add a last name text field. The field must be required. -->
 
             <li>
-                <label for="last_name">Last Name: </label>
+                <label for="last_name"><strong>Last Name: </strong></label>
                 <input type="text" id="last_name" name="last_name" required>
             </li>
 
         <!-- TODO 2.4: Add an email text field. The field must be read only. -->
 
             <li>
-                <label for="email">Email: </label>
+                <label for="email"><strong>Email: </strong></label>
                 <input type="email" id="email" name="email">
             </li>
 
         <!-- TODO 2.5: Add an address text field. The field must be disabled. -->
 
             <li>
-                <label for="address">Address:</label>
+                <label for="address"><strong>Address: </strong></label>
                 <input type="text" id="address" name="address">
             </li>
 
         <!-- TODO 2.6: Add a year level dropdown. The inital selected value must be "Select an option", but it must not be a valid selection. -->
 
+            
+            <li>
+                <label for="year"><strong>Year Level: </strong></label>
+                <select name="yearLevel">
+                <option value="" disabled selected hidden>Select an option</option>
+                <option value="1">Year 1</option>
+                <option value="2">Year 2</option>
+                <option value="3">Year 3</option>
+                <option value="4">Year 4</option>
+                </select>
+            </li>
+
+        
+
         <!-- TODO 2.7: Add radio buttons that ask which learning mode the user prefers -->
 
+            <h3>Which learning mode do you prefer?</h3>
+            <input type="radio" id="visual" name="learningMode" value="visual">
+            <label for="onsite">On-site</label><br>
+            <input type="radio" id="auditory" name="learningMode" value="auditory">
+            <label for="Modular">Modular</label><br>
+
         <!-- TODO 2.8: Add check boxes that ask which subjects the user has taken -->
-       
+            <h3>Which subjects have you taken?</h3>
+            <input type="checkbox" id="math" name="subject" value="math">
+            <label for="math">Math</label><br>
+            <input type="checkbox" id="science" name="subject" value="science">
+            <label for="science">Science</label><br>
+            <input type="checkbox" id="history" name="subject" value="history">
+            <label for="history">History</label>
+
+        </ul>
+
         <!-- TODO 2.9: Add a text area that asks the user if they would prefer to be a cactus or a shark -->
+
+            <h3>If you could be a cactus or a shark, which would you prefer to be?</h3>
+            <textarea id="preference" name="preference" rows="4" cols="50"></textarea><br>
 
         <!-- TODO 2.10: Add a submit button -->
 
-        </ul>
+        <input type="submit" value="Submit">
     </form>
 
 </body>
